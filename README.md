@@ -1,17 +1,21 @@
-# student_gradebook
+Опис проекту
+Student Gradebook — це мобільний додаток на базі Flutter для моніторингу навчальних досягнень. Програма забезпечує облік предметів, ведення журналу оцінок та автоматичний розрахунок академічної статистики.
 
-A new Flutter project.
+Функціональні можливості
+-Розрахунок середнього балу для кожного предмету та загального показника по всіх дисциплінах.
+-Присвоєння статусів успішності (Excellent, Good, Satisfactory, Poor) на основі отриманих балів.
+-Візуалізація рейтингу за допомогою п'ятибальної системи зірок.
+-Групування оцінок за типами: Exam, Quiz, Homework, Project.
+-Можливість додавання нових оцінок через модальні вікна з валідацією введених даних.
+-Видалення записів про оцінки за допомогою жесту свайпу.
 
-## Getting Started
+Технічні характеристики
+Мова програмування: Dart.
+Фреймворк: Flutter (Material 3).
+Архітектура: Розподіл на рівні моделей (Models), екранів (Screens) та віджетів (Widgets).
+Управління станом: Local State Management (setState).
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Структура коду
+lib/models/: класи Subject, Grade та GradeType. Містять логіку обчислень та обробки даних.
+lib/screens/: HomeScreen (головний екран зі статистикою) та SubjectDetailsScreen (екран керування оцінками).
+lib/widgets/: кастомний віджет SubjectCard для відображення елементів списку.
